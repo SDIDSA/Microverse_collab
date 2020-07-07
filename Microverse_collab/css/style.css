@@ -1,6 +1,45 @@
+#main {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 500;
+}
 
+#main::after {
+    content: '';
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../back.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: .4;
+}
+
+#main > * {
+    position: relative;
+    z-index: 2;
+}
+
+#title {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
 img {
-    width: 50%;
+    width: 100%;
     height: auto;
+    max-width: 500px;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,.5);
+}
+
+#img-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
